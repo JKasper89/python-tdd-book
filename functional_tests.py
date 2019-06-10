@@ -25,7 +25,7 @@ class NewVisitorTest(unittest.TestCase):
         # She is invited to enter a to-do item straight away
         inputbox = self.browser.find_element_by_id('id_new_item')
         self.assertEqual(
-            inputbox.get_attributes('placeholder'),
+            inputbox.get_attribute('placeholder'),
             'Enter a to-do item'
         )
 
@@ -39,15 +39,16 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(1)
 
         table = self.browser.find_element_by_id('id_list_table')
-        rows = table.find_elemnts_by_tag_name('tr')
+        rows = table.find_elements_by_tag_name('tr')
         self.assertTrue(
-            any(row.text == '1: Buy peacock feathers' for row in rows)
+            any(row.text == '1: Buy peacock feathers' for row in rows),
+            "New to-do item did not appear in table"
         )
 
         # There is still a text box inviting her to add another item. she
         # enters "Use peacock feathers to make a fly" (Edith is very methodical)
         self.fail('Finish the Test')
-        
+
         # The page updates again, and now shows both items on her list
 
         # Edith wonders wheter the site will remember her list. Then she sees
