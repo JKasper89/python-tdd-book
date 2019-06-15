@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import WebDriverException
 import time
 
-MAX_WAIT = 15
+MAX_WAIT = 10
 
 class NewVisitorTest(LiveServerTestCase):
     """docstring for NewVisitorTest."""
@@ -29,7 +29,7 @@ class NewVisitorTest(LiveServerTestCase):
                 time.sleep(0.5)
 
     def test_can_start_a_list_for_one_user(self):
-        # Edith has heard about a cool new online to-do-app. She goes
+        #Edith has heard about a cool new online to-do-app. She goes
         # to check out its homepage
         self.browser.get(self.live_server_url)
 
