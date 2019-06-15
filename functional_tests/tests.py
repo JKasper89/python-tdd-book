@@ -72,7 +72,7 @@ class NewVisitorTest(LiveServerTestCase):
 
         # Satisfied she goes back to sleep
 
-    def test_multiple_users_cas_start_lists_at_different_urls(self):
+    def test_multiple_users_can_start_lists_at_different_urls(self):
 
         # Edith starts a new to-do list
         self.browser.get(self.live_server_url)
