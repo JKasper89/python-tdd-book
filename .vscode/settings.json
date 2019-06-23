@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "virtualenv/bin/python3.6",
+    "python.pythonPath": "virtualenv\\Scripts\\python.exe",
     "pythonTestExplorer.testFramework": "unittest"
 }

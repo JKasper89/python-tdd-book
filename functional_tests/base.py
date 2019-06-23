@@ -6,7 +6,7 @@ import time
 # from selenium.webdriver.common.keys import Keys
 # from unittest import skip
 
-MAX_WAIT = 15
+MAX_WAIT = 5
 
 class FunctionalTest(StaticLiveServerTestCase):
 
